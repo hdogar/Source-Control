@@ -1,0 +1,41 @@
+GitHub Demo
+
+1. Create account on https://github.com/
+2. Download git from https://git-scm.com/ and install
+3. Set UserName and UserEmail using 
+	$ git config --global user.name
+	$ git config --global user.email
+	$ git credential fill
+		protocol=https
+		host=hdogar@github.com
+		--for beanstalk = visionet-systems@beanstalkapp.com
+
+<REFERENCE: https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage>
+		
+
+4.  Run Git Bash and go to the folder "demo" where you have source code
+5.  Run the command $ git init
+6.  Run the command $ git status
+7.  Run the command $ git add .
+8.  Run the command $ git status
+9.  Run the command $ git commit -m "First commit"
+10. Run the command $ git log   or $ git log --oneline
+11. Create repository "demo" on https://github.com/
+12. Run the command $ git remote add origin https://github.com/hdogar/Source-Control.git
+13. Run the command $ git push -u origin master
+14. Make changes in file or add more files
+15. Run the command $ git status
+16. Run the command $ git add .
+17. Run the command $ git status
+18. Run the command $ git commit -m "Second commit"
+19. Run the command $ git push
+20. Add the following command in a batch file and schedule it:
+	@echo off
+	c:
+	cd \demo
+	git add . && git commit -m "AutoSync commit"
+	git push
+
+
+
+
